@@ -1,12 +1,19 @@
-/* General page styling */
-body {
-    font-family: Arial, sans-serif;
+/*GENERAL PAGE STYLING*/
+
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Header styling */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER AND NAVIGATION*/
+
 header {
     background-color: #1f3c88;
     color: white;
@@ -14,7 +21,10 @@ header {
     text-align: center;
 }
 
-/* Navigation links */
+nav {
+    margin-top: 10px;
+}
+
 nav a {
     color: white;
     margin: 0 10px;
@@ -22,26 +32,76 @@ nav a {
     font-weight: bold;
 }
 
-/* Hero section styling */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*MAIN CONTENT AREAS*/
+
 .hero {
+    flex: 1;
     padding: 50px;
     text-align: center;
     background-color: #eaeaea;
 }
 
-/* Button styling */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/*BUTTONS AND FORMS*/
+
 button {
     padding: 10px 20px;
     background-color: #1f3c88;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-/* Footer styling */
+button:hover {
+    background-color: #163172;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/*TABLE STYLING (ADMIN DASHBOARD) */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1f3c88;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* FOOTER (ALWAYS AT BOTTOM) */
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: auto;
 }
